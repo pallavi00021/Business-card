@@ -18,9 +18,31 @@ class MyApp extends StatelessWidget {
                 radius: 50.0,
                 backgroundImage: AssetImage('images/profile.jpg'),
               ),
-              Text('Pallavi Thukral'),
-              Text('FLUTTER DEVELOPER'),
+              Text('Pallavi Thukral',
+                  style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Pacifico',
+                ),
+),
+              Text('FLUTTER DEVELOPER',
+                  style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.teal.shade100,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Source Sans Pro',
+                  letterSpacing: 2.5,
+                ),
+                  ),
+               SizedBox(
+                  height: 20.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.teal.shade100,
+                  )),
               Card(
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
@@ -28,16 +50,28 @@ class MyApp extends StatelessWidget {
                   ),
                   title: Text(
                     '+91 99999XXXXX',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
+                    ),
                   ),
                 ),
               ),
               Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
+                    color: Colors.teal,
                   ),
                   title: Text(
                     'xxxxxxxxxxx@gmail.com',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                    ),
                   ),
                 ),
               ),
